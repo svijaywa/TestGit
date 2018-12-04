@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="productSearch.ProductSearchIT">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ProductSearchITSite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- productSearch.ProductSearchIT -->
+      <class name="siteNavigation.HomeLink">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="HomeLinkCheck" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- siteNavigation.HomeLink -->
+      <class name="productSearch.ProductSearchRU">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="ProductSearchRUSite"/>
+        </methods>
+      </class> <!-- productSearch.ProductSearchRU -->
+      <class name="productSearch.ProductBreadcrumb">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ProductCPBreadcrumb" invocation-numbers="24 27 35"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- productSearch.ProductBreadcrumb -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

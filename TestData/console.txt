@@ -1,0 +1,15 @@
+This goes to out.txt
+PASSED: siteCheck("syngenta.co.uk")
+PASSED: siteCheck("syngenta.it")
+
+===============================================
+    Default test
+    Tests run: 2, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 2, Failures: 0, Skips: 0
+===============================================
+
