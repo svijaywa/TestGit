@@ -30,7 +30,8 @@ public class CheckLinks {
     			WebElement element = links.get(i);
     			//By using "href" attribute, we could get the url of the required link
     			String url=element.getAttribute("href");
-    			verifyLink(url);			
+    			verifyLink(url);
+    			driver.close();
     		}	
     	}
     	
