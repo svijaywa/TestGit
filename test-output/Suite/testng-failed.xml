@@ -8,6 +8,34 @@
       </run>
     </groups>
     <classes>
+      <class name="productSearch.ProductBreadcrumb">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ProductCPBreadcrumb" invocation-numbers="5 13 20 24 27 35"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- productSearch.ProductBreadcrumb -->
+      <class name="excelData.TestRun">
+        <methods>
+          <include name="tearDown"/>
+          <include name="siteHack" invocation-numbers="55 57 58 59 60 61 62 63 64"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- excelData.TestRun -->
+      <class name="productSearch.SearchFunctionality">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="SearchFunctionalitySite"/>
+        </methods>
+      </class> <!-- productSearch.SearchFunctionality -->
+      <class name="weatherWidget.CheckWeatherWidget">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="CheckWeather" invocation-numbers="45 47 48 49 50 51 52 53 54"/>
+        </methods>
+      </class> <!-- weatherWidget.CheckWeatherWidget -->
       <class name="productSearch.ProductSearchIT">
         <methods>
           <include name="tearDown"/>
@@ -15,13 +43,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- productSearch.ProductSearchIT -->
-      <class name="siteNavigation.HomeLink">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="HomeLinkCheck" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- siteNavigation.HomeLink -->
       <class name="productSearch.ProductSearchRU">
         <methods>
           <include name="tearDown"/>
@@ -29,13 +50,13 @@
           <include name="ProductSearchRUSite"/>
         </methods>
       </class> <!-- productSearch.ProductSearchRU -->
-      <class name="productSearch.ProductBreadcrumb">
+      <class name="siteNavigation.HomeLink">
         <methods>
           <include name="tearDown"/>
-          <include name="ProductCPBreadcrumb" invocation-numbers="24 27 35"/>
           <include name="setUp"/>
+          <include name="HomeLinkCheck" invocation-numbers="0 56 58 59 60 61 62 63 64 65"/>
         </methods>
-      </class> <!-- productSearch.ProductBreadcrumb -->
+      </class> <!-- siteNavigation.HomeLink -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

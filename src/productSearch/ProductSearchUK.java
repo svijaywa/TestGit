@@ -26,14 +26,12 @@ public class ProductSearchUK extends BaseClass {
 		WebDriver driver=new ChromeDriver();
 		 
 		// Open site
-		driver.get("https://www.syngenta.co.uk/");
+		driver.get("https://www.syngenta.co.uk/products/search/crop-protection/");
 		 
 		// Maximize browser
 		 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		WebElement ele = driver.findElement(By.xpath("//*[contains(@href,'/products/search/crop-protection')]"));
-		ele.click();
 		Utility.captureScreenshot(driver, "SearchPageUK");
 		WebElement ele1=driver.findElement(By.id("edit-search-api-views-fulltext"));
 		ele1.clear();

@@ -26,14 +26,13 @@ public class ProductSearchIT extends BaseClass{
 		WebDriver driver=new ChromeDriver();
 		 
 		// Open site
-		driver.get("https://www.syngenta.it/");
+		driver.get("https://www.syngenta.it/products/search/crop-protection/");
 		 
 		// Maximize browser
 		 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		WebElement ele = driver.findElement(By.xpath("//*[contains(@href,'/varieta-e-prodotti')]"));
-		ele.click();
+		String url = driver.getCurrentUrl();
 		Utility.captureScreenshot(driver, "SearchPageIT");
 		WebElement ele1=driver.findElement(By.id("edit-search-api-views-fulltext"));
 		ele1.clear();

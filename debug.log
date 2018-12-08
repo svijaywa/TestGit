@@ -3,3 +3,10 @@
 [0703/151743.912:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0703/151743.912:ERROR:exception_snapshot_win.cc(88)] thread ID 27404 not found in process
 [0703/151743.912:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1205/222009.382:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[1205/222009.384:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[1205/222009.384:ERROR:process_reader_win.cc(242)] ReadMemory at 0x7280060 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1205/222009.385:WARNING:process_snapshot_win.cc(69)] ReadMemory ExceptionInformation failed
+[1205/222009.385:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1206/105429.251:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1206/105429.255:ERROR:exception_snapshot_win.cc(88)] thread ID 25644 not found in process
