@@ -17,13 +17,14 @@ public class ReadYear {
 	public void siteHack(String countryname) throws InterruptedException
 	{
 		 
-		System.setProperty("webdriver.chrome.driver", "C:/Soniya/SeleniumSetup/chromedriver_win32/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Soniya/SeleniumSetup/chromedriver_win32 (1)/chromedriver.exe");
 		 
 		// Initialize browser
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(countryname);
+		System.out.println(driver.getCurrentUrl());
 		
 	    WebElement ele1 = driver.findElement(By.cssSelector(".pane-syn-country-core-geography-indicator"));
 	    String s2 = ele1.getText();
@@ -37,7 +38,7 @@ public class ReadYear {
 	@DataProvider(name="year")
 	public Object[][] datapass()
 	{
-			ExcelDataConfig config = new ExcelDataConfig("C:/Soniya/SyngentaProject/TestData/countrylist.xlsx");
+			ExcelDataConfig config = new ExcelDataConfig("C:/Soniya/SyngentaProject/TestData/latestsite.xlsx");
 			int rows = config.getRowCount(0);
 			Object[][] data = new Object[rows][1];
 			

@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="productSearch.ProductBreadcrumb">
+      <class name="goliveChecks.CheckPreprodURL">
         <methods>
-          <include name="tearDown"/>
-          <include name="ProductCPBreadcrumb" invocation-numbers="5 13 20 24 27 35"/>
-          <include name="setUp"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- productSearch.ProductBreadcrumb -->
-      <class name="excelData.TestRun">
-        <methods>
-          <include name="tearDown"/>
-          <include name="siteHack" invocation-numbers="55 57 58 59 60 61 62 63 64"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- excelData.TestRun -->
-      <class name="productSearch.SearchFunctionality">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="SearchFunctionalitySite"/>
-        </methods>
-      </class> <!-- productSearch.SearchFunctionality -->
-      <class name="weatherWidget.CheckWeatherWidget">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="CheckWeather" invocation-numbers="45 47 48 49 50 51 52 53 54"/>
-        </methods>
-      </class> <!-- weatherWidget.CheckWeatherWidget -->
-      <class name="productSearch.ProductSearchIT">
-        <methods>
-          <include name="tearDown"/>
-          <include name="ProductSearchITSite"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- productSearch.ProductSearchIT -->
-      <class name="productSearch.ProductSearchRU">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="ProductSearchRUSite"/>
-        </methods>
-      </class> <!-- productSearch.ProductSearchRU -->
-      <class name="siteNavigation.HomeLink">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="HomeLinkCheck" invocation-numbers="0 56 58 59 60 61 62 63 64 65"/>
-        </methods>
-      </class> <!-- siteNavigation.HomeLink -->
+      </class> <!-- goliveChecks.CheckPreprodURL -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

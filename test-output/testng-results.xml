@@ -2,38 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23148" started-at="2018-12-07T11:49:40Z" finished-at="2018-12-07T11:50:03Z">
+  <suite name="Default suite" duration-ms="272148" started-at="2019-06-26T09:14:50Z" finished-at="2019-06-26T09:19:22Z">
     <groups>
-      <group name="Smoke">
-        <method signature="ProductSearchIT.ProductSearchITSite()[pri:0, instance:productSearch.ProductSearchIT@12f41634]" name="ProductSearchITSite" class="productSearch.ProductSearchIT"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="23148" started-at="2018-12-07T11:49:40Z" finished-at="2018-12-07T11:50:03Z">
-      <class name="productSearch.ProductSearchIT">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:productSearch.ProductSearchIT@12f41634]" name="setUp" is-config="true" duration-ms="290" started-at="2018-12-07T11:49:40Z" finished-at="2018-12-07T11:49:40Z">
+    <test name="Default test" duration-ms="272148" started-at="2019-06-26T09:14:50Z" finished-at="2019-06-26T09:19:22Z">
+      <class name="goliveChecks.Golive">
+        <test-method status="PASS" signature="test()[pri:0, instance:goliveChecks.Golive@27f723]" name="test" duration-ms="272096" started-at="2019-06-26T09:14:50Z" finished-at="2019-06-26T09:19:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ProductSearchITSite()[pri:0, instance:productSearch.ProductSearchIT@12f41634]" name="ProductSearchITSite" duration-ms="23112" started-at="2018-12-07T11:49:40Z" finished-at="2018-12-07T11:50:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSearchITSite -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:productSearch.ProductSearchIT@12f41634]" name="getResult" is-config="true" duration-ms="14" started-at="2018-12-07T11:50:03Z" finished-at="2018-12-07T11:50:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ProductSearchITSite status=SUCCESS method=ProductSearchIT.ProductSearchITSite()[pri:0, instance:productSearch.ProductSearchIT@12f41634] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:productSearch.ProductSearchIT@12f41634]" name="tearDown" is-config="true" duration-ms="377" started-at="2018-12-07T11:50:03Z" finished-at="2018-12-07T11:50:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- productSearch.ProductSearchIT -->
+        </test-method> <!-- test -->
+      </class> <!-- goliveChecks.Golive -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

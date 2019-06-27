@@ -47,7 +47,7 @@ public class TestRun extends BaseClass {
 			@DataProvider(name="sitestatuscheck")
 			public Object[][] datapass()
 			{
-					ExcelDataConfig config = new ExcelDataConfig("C:/Soniya/SyngentaProject/TestData/sitename.xlsx");
+					ExcelDataConfig config = new ExcelDataConfig("C:/Soniya/SyngentaProject/TestData/latestsite.xlsx");
 					int rows = config.getRowCount(0);
 					Object[][] data = new Object[rows][1];
 					

@@ -25,7 +25,7 @@ public class PostGoLiveChecks {
 	ele.sendKeys("soniya.vijaywargi@syngenta.com");
 	WebElement ele1 = driver.findElement(By.id("edit-pass"));
 	ele1.clear();
-	ele1.sendKeys("10Soniya#2018!");
+	ele1.sendKeys("Syngenta1");
 	WebElement wb = driver.findElement(By.id("edit-submit"));
 	wb.click();
 	driver.get("https://preprod.syngentadrptest.com/admin/config/search/xmlsitemap/rebuild");
@@ -33,6 +33,8 @@ public class PostGoLiveChecks {
 	WebDriverWait wait = new WebDriverWait(driver,50);
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Add new XML sitemap")));
 	List<WebElement> allEle=driver.findElements(By.xpath("//table[contains(@class, 'sticky-enabled table-select-processed tableheader-processed sticky-table')]/tbody/tr/td/a"));
+	Integer linkSize = allEle.size();
+	System.out.println(linkSize);
 	
 	for(WebElement eles:allEle)
 	{	
@@ -48,9 +50,11 @@ public class PostGoLiveChecks {
 				System.out.println(value);
 			}
 			break;
+			
 		}
-	
+		
 	}
+	
 	driver.close();
 	
 	}

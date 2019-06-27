@@ -26,7 +26,8 @@ public class WeatherAPI {
 				System.out.println("Response Body is =>  " + responseBody);
 				JsonPath jsonPath = new JsonPath(responseBody);
 			    JsonPath jsonPathEvaluator = response.jsonPath();
-			    System.out.println("Data received from Response " + jsonPathEvaluator.get("151.field_link.und"));
+			    System.out.println("Data received from Response " + jsonPathEvaluator.get("121.title"));
+			    
 				}
 			 	
 

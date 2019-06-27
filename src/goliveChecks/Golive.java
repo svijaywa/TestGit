@@ -30,7 +30,7 @@ public class Golive {
     ele.sendKeys("soniya.vijaywargi@syngenta.com");
     WebElement ele1 = driver.findElement(By.id("edit-pass"));
     ele1.clear();
-    ele1.sendKeys("10Soniya#2018!");
+    ele1.sendKeys("Syngenta1");
     WebElement wb = driver.findElement(By.id("edit-submit"));
     wb.click();
     driver.get("https://preprod.syngentadrptest.com/admin/config/search/xmlsitemap/rebuild");
@@ -58,6 +58,12 @@ public class Golive {
 				{	
 					String value=element.getText();
 					System.out.println(value);
+					 if(element.getText().contains("synqa"))
+					    {
+					        String value1 = element.getText();
+					        System.out.println(value1);
+					        
+					    }
 				}
 		    	driver.close();
 		 }

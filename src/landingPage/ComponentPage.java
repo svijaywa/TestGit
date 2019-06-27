@@ -41,7 +41,7 @@ public class ComponentPage {
 		driver.findElement(By.linkText("CUSTOMIZE DISPLAY")).click();
 		driver.findElement(By.linkText("content")).click();
 		driver.findElement(By.id("ctools-dropdown-6")).click();
-		driver.findElement(By.linkText("Add content")).click();
+		driver.findElement(By.linkText("Add content")).click();	
 		driver.findElement(By.linkText("Syngenta: CTA")).click();
 		driver.findElement(By.linkText("CTA: Teaser")).click();
 		driver.findElement(By.id("edit-title")).sendKeys("CTA Teaser");
