@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="goliveChecks.CheckPreprodURL">
+      <class name="excelData.TestRun">
         <methods>
-          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="siteHack" invocation-numbers="101"/>
+          <include name="setUp"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- goliveChecks.CheckPreprodURL -->
+      </class> <!-- excelData.TestRun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

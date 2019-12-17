@@ -45,7 +45,7 @@ public class Golive {
 	 {
 	 act.keyDown(Keys.CONTROL).click(driver.findElement((By.xpath("(//table[contains(@class, 'sticky-enabled table-select-processed tableheader-processed sticky-table')]/tbody/tr/td/a)["+(i+1)+"]")))).keyUp(Keys.CONTROL).build().perform();
 	 Set<String>lts= driver.getWindowHandles();
-	 System.out.println(lts.size());
+//	 System.out.println(lts.size());
 	 final Iterator<String> it = lts.iterator();
 	   while (it.hasNext()) 
 	   {
@@ -56,9 +56,9 @@ public class Golive {
 		    	List<WebElement> allEles=driver.findElements(By.xpath("//table[contains(@class, 'tablesorter sitemap')]/tbody/tr/td"));
 				for(WebElement element:allEles)
 				{	
-					String value=element.getText();
-					System.out.println(value);
-					 if(element.getText().contains("synqa"))
+			//		String value=element.getText();
+			//		System.out.println(value);
+					 if(element.getText().contains("crop"))
 					    {
 					        String value1 = element.getText();
 					        System.out.println(value1);

@@ -24,7 +24,7 @@ public class RollOutWeather {
 	WebDriver driver=new ChromeDriver();
 	 
 	// Open site
-	driver.get("https://Syngenta:Syngenta1@fr.test-syngentacp.acsitefactory.com/user");
+	driver.get("https://www.syngentaflowers.eu/user");
 	 
 	// Maximize browser
 	 
@@ -35,83 +35,89 @@ public class RollOutWeather {
 
 	WebElement ele = driver.findElement(By.id("edit-name"));
 	ele.clear();
-	ele.sendKeys("soniya.vijaywargi@syngenta.com");
+	ele.sendKeys("priyanka.singh@syngenta.com");
 	WebElement ele1 = driver.findElement(By.id("edit-pass"));
 	ele1.clear();
-	ele1.sendKeys("10Soniya#2018!1");
+	ele1.sendKeys("Vishal@983672123");
 	WebElement wb = driver.findElement(By.id("edit-submit"));
 	wb.click();
-	driver.get("https://fr.test-syngentacp.acsitefactory.com/services/agro-meteo-pro-10-jours");
+	driver.get("https://www.syngentaflowers.eu/service/weather");
 	Thread.sleep(3000);
 	driver.findElement(By.xpath("//ul[@class=\"tabs-primary tabs primary\"]/li/a[text()=\"Customize display\"]")).click();
 	driver.findElement(By.xpath("//li[@class=\"content\"]/a")).click();
 	Thread.sleep(3000);
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
-//	System.out.println("print");
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
-//	
-//	//Adding Search Box (with Graph button) in Service Page
-//	driver.findElement(By.linkText("Syngenta: Weather")).click();
-//	driver.findElement(By.linkText("Weather Search Box")).click();
-//	driver.findElement(By.id("edit-show-graph-button")).click();	
-//	driver.findElement(By.id("edit-return")).click();
-//	WebElement el = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
-//	el.click();
-//	Thread.sleep(6000);
-//	
-//	//Adding Graph widget in Service Page
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
-//	System.out.println("print");
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
-//	driver.findElement(By.linkText("Syngenta: Weather")).click();
-//	driver.findElement(By.linkText("Weather Chart Widget")).click();
-//	WebElement graph = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
-//	graph.click();
-//	Thread.sleep(6000);
-//	
-//	//Adding multiple widget in Service Page
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
-//	System.out.println("print");
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
-//	driver.findElement(By.linkText("Syngenta: Weather")).click();
-//	driver.findElement(By.linkText("Multiple days weather widget")).click();
-//	WebElement e2 = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
-//	e2.click();
-//	Thread.sleep(6000);
-//	
-//	
-//	//Adding combined weather component in service page
-//	
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
-//	System.out.println("print");
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
-//	driver.findElement(By.linkText("Syngenta: Weather")).click();
-//	driver.findElement(By.linkText("Hourly/Eight widget with Spray window")).click();
-//	WebElement e3 = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
-//	e3.click();
-//	Thread.sleep(6000);
-//	
-//	//Adding color and Restriction legend
-//	
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
-//	System.out.println("print");
-//	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
-//	driver.findElement(By.linkText("Syngenta: Weather")).click();
-//	driver.findElement(By.linkText("Color and Restriction Legend Weather Widget")).click();
-//	WebElement e5 = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
-//	e5.click();
-//	Thread.sleep(6000);
-//	
-	//changing cache setting
-	driver.findElement(By.xpath("//div[@id=\"ctools-dropdown-1\"]/div/a")).click();
-	driver.findElement(By.xpath("//span[@class=\"panels-sub-menu\"]/ul/li[@class=\"1\"]/a")).click();
-	driver.findElement(By.id("edit-method-0")).click();
-	driver.findElement(By.id("edit-submit")).click();
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
+	System.out.println("print");
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
 	
-	//Saving the page
+	//Adding Search Box (with Graph button) in Service Page
+	driver.findElement(By.linkText("Syngenta: Weather")).click();
+	driver.findElement(By.linkText("Weather Search Box")).click();
+	driver.findElement(By.id("edit-show-graph-button")).click();	
+	driver.findElement(By.id("edit-return")).click();
+	WebElement el = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
+	el.click();
+	Thread.sleep(6000);
 	
-	driver.findElement(By.xpath("//ul[@class=\"tabs primary\"]/li[2]/a")).click();
-//  driver.findElement(By.id("edit-published")).click();
+	//Adding Graph widget in Service Page
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
+	System.out.println("print");
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
+	driver.findElement(By.linkText("Syngenta: Weather")).click();
+	driver.findElement(By.linkText("Weather Chart Widget")).click();
+	WebElement graph = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
+	graph.click();
+	Thread.sleep(6000);
+	
+	//Adding multiple widget in Service Page
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
+	System.out.println("print");
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
+	driver.findElement(By.linkText("Syngenta: Weather")).click();
+	driver.findElement(By.linkText("Multiple days weather widget")).click();
+	WebElement e2 = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
+	e2.click();
+	Thread.sleep(6000);
+	
+	
+	//Adding combined weather component in service page
+	
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
+	System.out.println("print");
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
+	driver.findElement(By.linkText("Syngenta: Weather")).click();
+	driver.findElement(By.linkText("Hourly/Eight widget with Spray window")).click();
+	WebElement e3 = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
+	e3.click();
+	Thread.sleep(6000);
+	
+	//Adding color and Restriction legend
+	
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/a")).click();
+	System.out.println("print");
+	driver.findElement(By.xpath("//div[@id=\"panel-region-main\"]/div/div/div/ul/li[@class=\"0 first\"]/a")).click();
+	driver.findElement(By.linkText("Syngenta: Weather")).click();
+	driver.findElement(By.linkText("Color and Restriction Legend Weather Widget")).click();
+	WebElement e5 = new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("panels-dnd-save")));
+	e5.click();
+	Thread.sleep(6000);
+	
+//	//changing cache setting
+//	driver.findElement(By.xpath("//div[@id=\"ctools-dropdown-1\"]/div/a")).click();
+//	driver.findElement(By.xpath("//span[@class=\"panels-sub-menu\"]/ul/li[@class=\"1\"]/a")).click();
+//	driver.findElement(By.id("edit-method-0")).click();
+//	driver.findElement(By.id("edit-submit")).click();
+
+	
+	//Saving the Configuration Page
+	
+	driver.findElement(By.xpath("//a[@href=\"/admin/config\"]")).click();
+    driver.findElement(By.xpath("//a[@href=\"/admin/config/syngenta/weather-config\"]")).click();
+    driver.findElement(By.id("edit-submit")).click();
+    driver.close();
+	
+	
+	
 	}
 
 }
