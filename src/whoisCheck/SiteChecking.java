@@ -20,7 +20,7 @@ import java.io.FileOutputStream;
 
 		    @Test
 		    public void test() throws InterruptedException{
-		    	System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver_win32/chromedriver.exe");
+		    	System.setProperty("webdriver.chrome.driver", "C:/Soniya/SeleniumSetup/chromedriver_win32 (1)/chromedriver.exe");
 				WebDriver driver=new ChromeDriver();
 				driver.manage().window().maximize();
 		        driver.get("https://whois.net/");
